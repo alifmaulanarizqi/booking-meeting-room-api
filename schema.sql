@@ -39,6 +39,6 @@ CREATE INDEX idx_bookings_room_time_confirmed
 CREATE INDEX idx_bookings_user_id ON bookings (user_id);
 
 INSERT INTO users (name, email, password_hash, role) VALUES
-    ('Admin', 'admin@test.com', crypt('password123', gen_salt('bf', 10)), 'ADMIN'),
-    ('User 1', 'user1@test.com', crypt('password123', gen_salt('bf', 10)), 'USER'),
-    ('User 2', 'user2@test.com', crypt('password123', gen_salt('bf', 10)), 'USER');
+    ('Administrator', 'admin@test.com', crypt('password123', gen_salt('bf', 10)), 'ADMIN'),
+    ('User Satu', 'user1@test.com', crypt('password123', gen_salt('bf', 10)), 'USER'),
+    ('User Dua', 'user2@test.com', crypt('password123', gen_salt('bf', 10)), 'USER');
