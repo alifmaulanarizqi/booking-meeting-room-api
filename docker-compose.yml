@@ -10,6 +10,7 @@ services:
       - DB_DATABASE=meeting_booking
       - DB_USERNAME=postgres
       - DB_PASSWORD=postgres
+      - TEST_BASE_URL=http://nginx
     depends_on:
       db:
         condition: service_healthy
